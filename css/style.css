@@ -1,12 +1,17 @@
 html * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
 }
 
  body {
@@ -34,13 +39,21 @@ p {
 }
 
 .shrink {
-  height: 35px;
-  line-height: 35px;
+  height: 40px;
+  line-height: 40px;
+  opacity: 0.8;
 }
 
 nav {
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
+}
+
+#mobile-nav {
+  min-height: 100vh;
+
+  background-color: #000;
+  opacity: 0.8;
 }
 
 .button-collapse {
@@ -53,9 +66,45 @@ nav {
   height: auto;
   color: rgba(255,255,255,.9);
 }
-  .parallax-container .section {
+.parallax-container .section {
     width: 100%;
-  }
+}
+
+.parallax-1, .parallax-2, .parallax-3 {
+  position:relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-1 {
+  background-image: url('../images/background1.jpg');
+  min-height:100vh;
+}
+
+.parallax-2 {
+  background-image: url('../images/background2.jpg');
+  max-height: 380px;
+}
+
+.parallax-3 {
+  background-image: url('../images/background3.jpg');
+}
+
+#index-banner {
+  padding-top:10%;
+  height: 100vh;
+}
+
+#about_me .section #welcome {
+  padding-top:2%;
+  min-height: 100vh;
+}
+
+#about_me:first-child h2 {
+  padding-top: 5%;
+}
 
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
@@ -307,6 +356,7 @@ nav {
     font-size: 14px;
     font-size: 0.875rem;
   }
+
 }
 @media only screen and (min-width: 1170px) {
   .cd-timeline-content {
@@ -485,6 +535,12 @@ td {
   padding-bottom: 20px;
 }
 
+@media only screen and (max-width:768px) {
+  #projects td{
+    display:block;
+  }
+}
+
 .modal-img {
   float:left;
   margin-right: 5%;
@@ -494,6 +550,7 @@ td {
 .connect-container {
     padding-top: 20%;
     padding-bottom: 14%;
+    min-height: 95vh;
 }
 
 .connect-container .connect-table {

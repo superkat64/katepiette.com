@@ -19,45 +19,55 @@
 <body>
     <div class="wrapper">
       <div class="navbar-fixed">
-        <nav class="white" role="navigation">
-          <div class="nav-wrapper container">
-            <ul class="right hide-on-med-and-down">
-              <li><a class="pg-link red-text text-lighten-2" href="#experience">Experience</a></li>
-              <li><a class="pg-link red-text text-lighten-2" href="#projects">Projects</a></li>
-              <li><a class="pg-link red-text text-lighten-2" href="#connect">Connect</a></li>
-              <li><a class="red-text text-lighten-2" href="documents/resume.pdf" target="_blank">Resume</a></li>
-            </ul>
+         <nav class="white" role="navigation">
+           <div class="nav-wrapper container">
+             <ul class="right hide-on-med-and-down">
+               <li><a class="pg-link red-text text-lighten-2" href="#about_me">About Me</a></li>
+               <li><a class="pg-link red-text text-lighten-2" href="#experience">Experience</a></li>
+               <li><a class="pg-link red-text text-lighten-2" href="#projects">Projects</a></li>
+               <li><a class="pg-link red-text text-lighten-2" href="#connect">Connect</a></li>
+               <li><a class="red-text text-lighten-2" href="documents/resume.pdf" target="_blank">Resume</a></li>
+             </ul>
 
-            <ul id="nav-mobile" class="side-nav">
-              <li><a class="pg-link" href="#experience">Experience</a></li>
-              <li><a class="pg-link" href="#projects">Projects</a></li>
-              <li><a class="pg-link" href="#connect">Connect</a></li>
-              <li><a href="documents/resume.pdf">Resume</a></li>
-            </ul>
-            <a href="#" data-activates="nav-mobile" class="button-collapse red-text"><i class="material-icons">menu</i></a>
-          </div>
-        </nav>
-      </div>
+             <a id="mobile" href="#" class="red-text"><i class="material-icons">menu</i></a>
+             <div id="mobile-nav">
+               <ul class="">
+                 <li><a class="pg-link" href="#about_me">About Me</a></li>
+                 <li><a class="pg-link" href="#experience">Experience</a></li>
+                 <li><a class="pg-link" href="#projects">Projects</a></li>
+                 <li><a class="pg-link" href="#connect">Connect</a></li>
+                 <li><a href="documents/resume.pdf">Resume</a></li>
+               </ul>
+             </div>
+           </div>
+         </nav>
+       </div>
+
+       <section id="welcome">
+           <div class="parallax-1">
+             <div id="index-banner" class="parallax-container">
+               <div class="section no-pad-bot">
+                 <div class="container left">
+                   <br><br>
+                   <h1 class="header center red-text ">Hey, I'm Kate</h1>
+                   <h3 class="center red-text text-lighten-1 light">Welcome!</h3>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+       </section>
 
 <!-- ABOUT ME -->
         <section id="about_me">
-          <div id="index-banner" class="parallax-container">
-            <div class="section no-pad-bot">
-              <div class="container left">
-                <br><br>
-                <h1 class="header center red-text text-lighten-2">Hey. I'm Kate!</h1>
-                <div class="row center">
-                  <h3 class="header red-text col s12 light"> I am a { <b><span class="rotate">developer, programmer, thinker, builder, dreamer, coder, designer</span></b> }</h3>
-                </div>
-                <br><br>
-              </div>
-            </div>
-            <div class="parallax"><img src="images/background1.jpg" alt="Unsplashed background img 1"></div>
-          </div>
-
-          <div class="container">
+          <div id="about_me" class="container">
             <div class="section">
-
+              <div class="row">
+                <div class="col s12 center">
+                  <h2 class="red-text light">Here's a little about me.</h2>
+                  <h3 class="header red-text col s12 light"> I'm a { <b><span class="rotate">developer, programmer, thinker, builder, dreamer, coder, designer</span></b> }</h3>
+                </div>
+              </div>
               <div class="row no-pad-bot">
                 <div class="col s12 m4">
                   <div class="icon-block">
@@ -89,20 +99,20 @@
 
 <!-- EXPERIENCE -->
         <section id="experience">
-          <div class="parallax-container valign-wrapper">
-            <div class="section">
-              <div class="container center">
-                <div class="row">
-                  <h3 class="white-text header center">What I've been up to.</h3>
+          <div class="parallax-2">
+            <div class="parallax-container valign-wrapper">
+              <div class="section">
+                <div class="container center">
+                  <div class="row">
+                    <h3 class="white-text header center">What I've been up to.</h3>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="parallax"><img src="images/background2.jpg" alt="Unsplashed background img 2"></div>
           </div>
 
           <div class="container">
             <section id="cd-timeline" class="cd-container">
-
               <div class="cd-timeline-block" "cd-block-left">
                 <div class="cd-timeline-img cd-picture">
                   <img src="images/timeline-school.png" alt="School">
@@ -149,92 +159,100 @@
 
 <!-- PROJECTS -->
         <section id="projects">
-          <div class="parallax-container valign-wrapper">
-            <div class="section">
-              <div class="container center">
-                <div class="row">
-                  <h3 class="white-text header center">Some of my projects.</h3>
+            <div class="parallax-3">
+              <div class="valign-wrapper parallax-container">
+                <div class="section">
+                  <div class="container center">
+                    <div class="row">
+                      <h3 class="white-text header center">Some of my projects.</h3>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="parallax"><img src="images/background3.jpg" alt="Unsplashed background img 2"></div>
-          </div>
 
-          <!-- Modal Trigger -->
-          <div class="container project-table">
-            <table class="centered">
-              <tbody>
-                <tr>
-                  <td><a class="waves-effect waves-light" href="#modal1"><img src="images/img_faithconnect/faithconnect.png" alt="faithconnect"></a></td>
-                  <td><a class="waves-effect waves-light" href="#modal2"><img src="images/img_myforte/myForte.png" alt="myForte"></a></td>
-                </tr>
-                <tr>
-                  <td><a class="waves-effect waves-light" href="#modal4"><img src="images/img_connect-four/connect-four.png" alt="Conect Four"></a></td>
-                  <td><a class="waves-effect waves-light" href="#modal3"><img src="images/img_warlock-curse/warlock_curse.png" alt="Warlock's Curse"></a></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <!-- Modal Content -->
-          <div id="modal1" class="modal">
-            <div class="modal-content">
-              <img src="images/img_faithconnect/faithconnect.png" alt="faithconnect">
-              <p><b>TL DR;</b> FaithConnect is a suite of web apps that is a solution to the communication gap between faithbased oragnizations and non-profits.</p>
-              <p>I co-led student volunteer team of 10 to develop this software. It's functionality includes providing event, volunteer, group, and partner management, and allows for report generation and donations. I helped oversee the successful launch of FaithConnect in April 2016 for Messiah College's Impact Venture Challenge Competition. My partner and I pitched our product to a panel of esteemed businessmen and women. Currently we are rebranding to the name Henosis which means unity in Greek and developing a mobile app and an API.</p>
-              <p>Check out the site here: <a href="http://faithconnect.info" target="_blank">faithconnect.info</a></p>
-              <img class="materialboxed modal-img" width="128" data-caption="The current faithconnect homepage." src="images/img_faithconnect/home.png">
-              <img class="materialboxed modal-img" width="128" data-caption="A mockup of an events page." src="images/img_faithconnect/mockup.png">
-              <img class="materialboxed modal-img" width="128" data-caption="The Impact Venture Challenge Logo." src="images/img_faithconnect/ivc.png">
-            </div>
-            <div class="modal-footer">
-              <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat">Close</a>
-            </div>
-          </div>
-
-          <div id="modal2" class="modal">
-            <div class="modal-content">
-              <img src="images/img_myforte/myForte.png" alt="myForte">
-              <p><b>TL DR;</b> myForte is a social media website based around music preferences. It's backend is written in PHP with a MySQL database.</p>
-              <p>I led a SCRUM-driven team of 3 to develop this final project a server-side web development class. The database stores all user information, including personal playlists, and our personal storage of song information. Users can create an account, access their profile, change their settings and create different playlists. There was a bit of a learning curve learning PHP and dynamic programming but we made it work. For the front-end, we ultilized a template engine called Smarty to display our pages. Unfortunately, the live database has been erased for other classes so the site is inaccessible.</p>
-              <p>Check out the site here: <a href="http://camelot.cs.messiah.edu/~myforte/home.php" target="_blank">myforte.com</a></p>
-              <img class="materialboxed modal-img" width="128" data-caption="The myForte homepage." src="images/img_myforte/home.png">
-              <img class="materialboxed modal-img" width="128" data-caption="An original mockup of the user profile page." src="images/img_myforte/mockup.png">
-            </div>
-            <div class="modal-footer">
-              <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat">Close</a>
-            </div>
-          </div>
-
-          <div id="modal3" class="modal">
-            <div class="modal-content">
-              <img src="images/img_warlock-curse/warlock_curse.png" alt="Warlock's Curse">
-              <p><b>TL DR;</b> The Warlock's Curse is a twist on your classic text-based Adventure Game. Written in Python, it's exciting with twists and turns and a rather colorful ending that is tedious to find.</p>
-              <p>I designed this game for my programming 1 class. It's based around a common unlimited gameplay engine. I leveraged databases with key-value lookup to call room definitions from a CSV file. A user has the option to look and go north, south, east, or west and will discover different things about the setting based on the choosen action.</p>
+            <!-- Modal Trigger -->
+            <div class="container project-table">
+              <div class="section">
+                <div class="row">
+                  <table class="centered">
+                    <tbody>
+                      <tr>
+                        <td><a class="waves-effect waves-light" href="#modal1"><img src="images/img_faithconnect/faithconnect.png" alt="faithconnect"></a></td>
+                        <td><a class="waves-effect waves-light" href="#modal2"><img src="images/img_myforte/myForte.png" alt="myForte"></a></td>
+                      </tr>
+                      <tr>
+                        <td><a class="waves-effect waves-light" href="#modal4"><img src="images/img_connect-four/connect-four.png" alt="Conect Four"></a></td>
+                        <td><a class="waves-effect waves-light" href="#modal3"><img src="images/img_warlock-curse/warlock_curse.png" alt="Warlock's Curse"></a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
-            <div class="modal-footer">
-              <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat">Close</a>
             </div>
-          </div>
 
-          <div id="modal4" class="modal">
-            <div class="modal-content">
-              <img src="images/img_connect-four/connect-four.png" alt="Connect Four">
-              <p><b>TL DR;</b> Two player Connect Four Game with custom GUI and awesome end-game logic.</p>
-              <p>Designed and developed a graphical 2-player version of the Connect Four Game using Java. Colored circular glyphs and graphical interfaces made up the game board. Engineered an algorithm to determine the winner.</p>
-              <img class="materialboxed modal-img" width="128" data-caption="The opening load screen." src="images/img_connect-four/load.png">
-              <img class="materialboxed modal-img" width="128" data-caption="The GUI for the game board." src="images/img_connect-four/game.png">
-              <img class="materialboxed modal-img" width="128" data-caption="The win frame when one of the players wins." src="images/img_connect-four/winframe.png">
+            <!-- Modal Content -->
+            <div id="modal1" class="modal">
+              <div class="modal-content">
+                <img src="images/img_faithconnect/faithconnect.png" alt="faithconnect">
+                <p><b>TL DR;</b> FaithConnect is a suite of web apps that is a solution to the communication gap between faithbased oragnizations and non-profits.</p>
+                <p>I co-led student volunteer team of 10 to develop this software. It's functionality includes providing event, volunteer, group, and partner management, and allows for report generation and donations. I helped oversee the successful launch of FaithConnect in April 2016 for Messiah College's Impact Venture Challenge Competition. My partner and I pitched our product to a panel of esteemed businessmen and women. Currently we are rebranding to the name Henosis which means unity in Greek and developing a mobile app and an API.</p>
+                <p>Check out the site here: <a href="http://faithconnect.info" target="_blank">faithconnect.info</a></p>
+                <img class="materialboxed modal-img" width="128" data-caption="The current faithconnect homepage." src="images/img_faithconnect/home.png">
+                <img class="materialboxed modal-img" width="128" data-caption="A mockup of an events page." src="images/img_faithconnect/mockup.png">
+                <img class="materialboxed modal-img" width="128" data-caption="The Impact Venture Challenge Logo." src="images/img_faithconnect/ivc.png">
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat">Close</a>
+              </div>
             </div>
-            <div class="modal-footer">
-              <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat">Close</a>
+
+            <div id="modal2" class="modal">
+              <div class="modal-content">
+                <img src="images/img_myforte/myForte.png" alt="myForte">
+                <p><b>TL DR;</b> myForte is a social media website based around music preferences. It's backend is written in PHP with a MySQL database.</p>
+                <p>I led a SCRUM-driven team of 3 to develop this final project a server-side web development class. The database stores all user information, including personal playlists, and our personal storage of song information. Users can create an account, access their profile, change their settings and create different playlists. There was a bit of a learning curve learning PHP and dynamic programming but we made it work. For the front-end, we ultilized a template engine called Smarty to display our pages. Unfortunately, the live database has been erased for other classes so the site is inaccessible.</p>
+                <p>Check out the site here: <a href="http://camelot.cs.messiah.edu/~myforte/home.php" target="_blank">myforte.com</a></p>
+                <img class="materialboxed modal-img" width="128" data-caption="The myForte homepage." src="images/img_myforte/home.png">
+                <img class="materialboxed modal-img" width="128" data-caption="An original mockup of the user profile page." src="images/img_myforte/mockup.png">
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat">Close</a>
+              </div>
+            </div>
+
+            <div id="modal3" class="modal">
+              <div class="modal-content">
+                <img src="images/img_warlock-curse/warlock_curse.png" alt="Warlock's Curse">
+                <p><b>TL DR;</b> The Warlock's Curse is a twist on your classic text-based Adventure Game. Written in Python, it's exciting with twists and turns and a rather colorful ending that is tedious to find.</p>
+                <p>I designed this game for my programming 1 class. It's based around a common unlimited gameplay engine. I leveraged databases with key-value lookup to call room definitions from a CSV file. A user has the option to look and go north, south, east, or west and will discover different things about the setting based on the choosen action.</p>
+                <p>Check out the Github repo <a href="https://github.com/superkat64/AdventureGame" target="_blank">here</a>.</p>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat">Close</a>
+              </div>
+            </div>
+
+            <div id="modal4" class="modal">
+              <div class="modal-content">
+                <img src="images/img_connect-four/connect-four.png" alt="Connect Four">
+                <p><b>TL DR;</b> Two player Connect Four Game with custom GUI and awesome end-game logic.</p>
+                <p>Designed and developed a graphical 2-player version of the Connect Four Game using Java. Colored circular glyphs and graphical interfaces made up the game board. Engineered an algorithm to determine the winner.</p>
+                <p>Check out the Github repo <a href="https://github.com/superkat64/ConnectFour" target="_blank">here</a>.</p>
+                <img class="materialboxed modal-img" width="128" data-caption="The opening load screen." src="images/img_connect-four/load.png">
+                <img class="materialboxed modal-img" width="128" data-caption="The GUI for the game board." src="images/img_connect-four/game.png">
+                <img class="materialboxed modal-img" width="128" data-caption="The win frame when one of the players wins." src="images/img_connect-four/winframe.png">
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat">Close</a>
+              </div>
             </div>
           </div>
         </section>
 
 <!-- CONNECT -->
         <section id="connect">
-          <div class="block red lighten-1">
+          <div id="connect" class="block red lighten-1">
             <div class="container connect-container center">
               <div class="row">
                 <h3 class="white-text">Let's build something amazing together!</h3>

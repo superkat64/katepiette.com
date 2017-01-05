@@ -4065,6 +4065,7 @@ nav .brand-logo {
   font-size: 2.1rem;
   padding: 0;
   white-space: nowrap;
+  height:40px;
 }
 
 nav .brand-logo.center {
@@ -4078,6 +4079,7 @@ nav .brand-logo.center {
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
+    height:30px;
   }
   nav .brand-logo.left, nav .brand-logo.right {
     padding: 0;
