@@ -2,7 +2,6 @@
 
   $(function(){
     $('#about_me .row').hide();
-    $('#mobile-nav').hide();
 
     $('.materialboxed').materialbox();
     $('.modal').modal();
@@ -14,16 +13,15 @@
       speed: 2000
     });
 
+    $('#nav-icon').click(function(){
+		  $(this).toggleClass('open');
+      $('#nav-mobile').toggleClass('show');
+	  });
+
     $(window).scroll(function() {
       var show = $('#about_me').position();
       $('#about_me .row').fadeIn(1500);
     });
-
-    // For the mobile navbar
-    $('nav #mobile').click(function() {
-      jQuery('#mobile-nav').toggle('show');
-
-    })
 
     $(window).scroll(function() {
       if ($(document).scrollTop() > 50) {

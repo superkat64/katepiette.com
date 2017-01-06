@@ -44,16 +44,163 @@ p {
   opacity: 0.8;
 }
 
+.shrink #nav-icon span:nth-child(1) {
+  top: 10px;
+}
+
+.shrink #nav-icon span:nth-child(2), .shrink #nav-icon span:nth-child(3) {
+  top: 19px;
+}
+
+.shrink #nav-icon span:nth-child(4) {
+  top: 28px;
+}
+
+.shrink nav-icon.open span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
 nav {
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
 
-#mobile-nav {
-  min-height: 100vh;
+/* Hamburger Menu */
+#nav-icon {
+  width: 30px;
+  padding-top: 2%;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
 
-  background-color: #000;
-  opacity: 0.8;
+#nav-icon span{
+  display: block;
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  background: #e51c23;
+  border-radius: 6px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+#nav-icon span:nth-child(1) {
+  top: 18px;
+}
+
+#nav-icon span:nth-child(2), #nav-icon span:nth-child(3) {
+  top: 27px;
+}
+
+#nav-icon span:nth-child(4) {
+  top: 36px;
+}
+
+#nav-icon.open span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+#nav-icon.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#nav-icon.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#nav-icon.open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+.shrink #nav-icon span:nth-child(1) {
+  top: 10px;
+}
+
+.shrink #nav-icon span:nth-child(2), .shrink #nav-icon span:nth-child(3) {
+  top: 19px;
+}
+
+.shrink #nav-icon span:nth-child(4) {
+  top: 28px;
+}
+
+/* Mobile Nvigation Menu*/
+
+#nav-mobile {
+  width: 150px;
+  height: 100vh;
+  background-color: white;
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  transform: translateX(-100%);
+  transition: .25s ease-in-out;
+}
+
+#nav-mobile.show {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}
+
+#nav-mobile ul {
+  list-style: none;
+  background: #1c1c1c;
+  padding-left: 5px;
+  }
+
+#nav-mobile li {
+  display: block;
+  width: 90%;
+}
+
+#nav-mobile li:first-child a {
+}
+
+#nav-mobile li a {
+  margin-top: 10px;
+  padding-bottom: 10px;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  line-height: 2em;
+  height: 2em;
+  border-bottom: 1px solid #e51c23;
+}
+
+#nav-mobile li:last-child a {
+  border-bottom: none;
 }
 
 .button-collapse {
@@ -83,6 +230,10 @@ nav {
   min-height:100vh;
 }
 
+.parallax-1 .container {
+  float: left;
+}
+
 .parallax-2 {
   background-image: url('../images/background2.jpg');
   max-height: 380px;
@@ -107,6 +258,10 @@ nav {
 }
 
 @media only screen and (max-width : 992px) {
+  nav #nav-icon {
+    display: block;
+  }
+
   .parallax-container .section {
     position: absolute;
     top: 40%;
@@ -116,9 +271,21 @@ nav {
   }
 }
 
+@media only screen and (min-width : 992px) {
+  nav #nav-icon {
+    display:none;
+  }
+}
+
 @media only screen and (max-width : 600px) {
   #index-banner .section {
     top: 0;
+  }
+  .parallax-1 {
+    background-image: url('../images/mobile_background1.jpg');
+  }
+  .parallax-1 .container {
+    float: none;
   }
 }
 
@@ -356,7 +523,6 @@ nav {
     font-size: 14px;
     font-size: 0.875rem;
   }
-
 }
 @media only screen and (min-width: 1170px) {
   .cd-timeline-content {
