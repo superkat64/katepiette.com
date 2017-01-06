@@ -234,6 +234,10 @@ nav {
   float: left;
 }
 
+#welcome h1, #welcome h3 {
+  color: #ea454b;
+}
+
 .parallax-2 {
   background-image: url('../images/background2.jpg');
   max-height: 380px;
@@ -281,11 +285,32 @@ nav {
   #index-banner .section {
     top: 0;
   }
+
+  .parallax-1, .parallax-2, .parallax-3 {
+    position:relative;
+    background-attachment: inherit;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+
   .parallax-1 {
     background-image: url('../images/mobile_background1.jpg');
   }
+
+  .parallax-2 {
+    background-image: url('../images/mobile-background2.jpg');
+  }
+
+  .parallax-3 {
+    background-image: url('../images/mobile-background3.jpg');
+  }
   .parallax-1 .container {
     float: none;
+  }
+
+  #welcome h1, #welcome h3 {
+    color: #fff;
   }
 }
 
