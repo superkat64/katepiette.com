@@ -1,8 +1,9 @@
 (function($){
 
-  $(function(){
-    $('#about_me .row').hide();
 
+  $(function(){
+    $('#welcome #header_welcome').hide();
+    $('#about_me .row').hide();
     $('.materialboxed').materialbox();
     $('.modal').modal();
     $('.button-collapse').sideNav();
@@ -31,4 +32,6 @@
       }
     });
   }); // end of document ready
-})(jQuery); // end of jQuery name space
+})
+
+(jQuery); // end of jQuery name space

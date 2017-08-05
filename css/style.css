@@ -38,6 +38,21 @@ p {
   line-height: 2rem;
 }
 
+.low-center {
+  position: absolute;
+  left: 0;
+  top: 80%;
+  width: 100%;
+  text-align: center;
+  font-size: 112px;
+}
+
+.md-48 {
+  font-size: 48px;
+}
+
+/* Mobile Nav Menu */
+
 .shrink {
   height: 40px;
   line-height: 40px;
@@ -152,8 +167,6 @@ nav {
   top: 28px;
 }
 
-/* Mobile Nvigation Menu*/
-
 #nav-mobile {
   width: 150px;
   height: 100vh;
@@ -183,9 +196,6 @@ nav {
   width: 90%;
 }
 
-#nav-mobile li:first-child a {
-}
-
 #nav-mobile li a {
   margin-top: 10px;
   padding-bottom: 10px;
@@ -207,11 +217,12 @@ nav {
   color: #26a69a;
 }
 
+/* Parallax CSS */
+
 .parallax-container {
   min-height: 380px;
   line-height: 0;
   height: auto;
-  color: rgba(255,255,255,.9);
 }
 .parallax-container .section {
     width: 100%;
@@ -232,7 +243,12 @@ nav {
 
 .parallax-1 .container {
   float: left;
+  padding-left: 10%;
+  padding-right: 10%;
 }
+
+@-webkit-keyframes typing { from { width: 0; } }
+@-webkit-keyframes blink-caret { 50% {border-color: transparent; } }
 
 #welcome h1, #welcome h3 {
   color: #ea454b;
@@ -240,16 +256,12 @@ nav {
 
 .parallax-2 {
   background-image: url('../images/background2.jpg');
-  max-height: 380px;
 }
 
-.parallax-3 {
-  background-image: url('../images/background3.jpg');
-}
 
 #index-banner {
   padding-top:10%;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 #about_me .section #welcome {
@@ -257,8 +269,12 @@ nav {
   min-height: 100vh;
 }
 
-#about_me:first-child h2 {
+#about_me:first-child h2, #projects:first-child h2 {
   padding-top: 5%;
+}
+
+#about_me, #projects {
+  min-height: 100vh;
 }
 
 @media only screen and (max-width : 992px) {
@@ -300,11 +316,9 @@ nav {
 
   .parallax-2 {
     background-image: url('../images/mobile-background2.jpg');
+    background-size: cover;
   }
 
-  .parallax-3 {
-    background-image: url('../images/mobile-background3.jpg');
-  }
   .parallax-1 .container {
     float: none;
   }
@@ -717,13 +731,51 @@ nav {
   }
 }
 
-.project-table {
-  padding-top: 5%;
+/* PROJECTS SECTION CSS */
+.projects .item .figure {
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  overflow: hidden;
   padding-bottom: 5%;
 }
+.projects .item .figure img {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+  margin: 0 auto;
+  -webkit-transition: transform 0.5s linear;
+  -moz-transition: transform 0.5s linear;
+  -ms-transition: transform 0.5s linear;
+  -o-transition: transform 0.5s linear;
+}
 
-td {
-  padding-bottom: 20px;
+.img-responsive {
+  vertical-align: middle;
+  width: 100%;
+  min-height: 200px;
+
+}
+.projects .item .figure:hover img {
+  -webkit-opacity: 0.8;
+  -moz-opacity: 0.8;
+  opacity: 0.8;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+.projects .item .figure-container a {
+  display: block;
+  -webkit-opacity: 0.8;
+  -moz-opacity: 0.8;
+  opacity: 0.8;
+}
+.projects .item .figure-container a:hover {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
 }
 
 @media only screen and (max-width:768px) {
@@ -736,6 +788,13 @@ td {
   float:left;
   margin-right: 5%;
   padding-bottom: 2%;
+  max-height: 128px;
+  max-width: 128px;
+}
+
+.materialboxed.active {
+  max-height: none;
+  max-width: none;
 }
 
 .connect-container {
