@@ -5,8 +5,21 @@ $(document).ready(function() {
     e.preventDefault();
     // Scroll the window, stop any previous animation, stop on user manual scroll
     // Check https://github.com/flesler/jquery.scrollTo for more customizability
-    $(window)
-      .stop(true)
-      .scrollTo(this.hash, {duration: 1000, interrupt: true});
+    if (this.hash === '#connect' || this.hash === '#experience') {
+      $(window)
+        .stop(true)
+        .scrollTo(this.hash, this.hash, {
+          duration: 1000,
+          interrupt: true,
+        });
+    } else {
+      $(window)
+        .stop(true)
+        .scrollTo(this.hash, this.hash, {
+          offset: {top: -40},
+          duration: 1000,
+          interrupt: true,
+        });
+    }
   });
 });
