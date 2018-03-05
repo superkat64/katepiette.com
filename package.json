@@ -1,0 +1,14 @@
+{
+  "name": "katepiette.com",
+  "version": "1.0.0",
+  "description": "Personal Website",
+  "main": "index.js",
+  "repository": "https://github.com/superkat64/katepiette.com.git",
+  "author": "Kate Piette <kat.piette@gmail.com>",
+  "license": "None",
+  "private": false,
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "jquery.scrollto": "^2.1.2"
+  }
+}
